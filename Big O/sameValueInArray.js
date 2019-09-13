@@ -21,9 +21,7 @@ function containCommonItem2(arr1, arr2) {
   for (let j = 0; j < arr2.length; j++) {
     if (map[arr2[j]]) {
       console.log(true);
-    } else {
-      console.log(false);
-    }
+    } 
   }
 }
-containCommonItem2(arr1, arr2);
+containCommonItem2(arr1, arr2);//O(a+b)
