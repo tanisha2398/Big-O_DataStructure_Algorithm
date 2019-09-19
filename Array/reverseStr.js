@@ -1,7 +1,17 @@
 let str = "Hi my Name is Tanisha";
 function reverse(str) {
+  const arr = [];
   for (let i = str.length - 1; i >= 0; i--) {
-    console.log(str[i]);
+    arr.push(str[i]);
   }
+  console.log(arr.join(""));
 }
-reverse(str);
+function reverse2(str) {
+  console.log(
+    str
+      .split("")
+      .reverse()
+      .join("")
+  );
+}
+reverse2(str);
