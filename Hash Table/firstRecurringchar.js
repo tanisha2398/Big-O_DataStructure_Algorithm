@@ -21,7 +21,22 @@ class HashTable {
         return console.log(arr[i]);
       }
     }
+    return console.log("undefined");
   }
 }
+function firstRecurringCharacter(input) {
+  let map = {};
+  for (let i = 0; i < input.length; i++) {
+    if (map[input[i]]) {
+      return console.log(input[i]);
+    } else {
+      map[input[i]] = i;
+    }
+    console.log(map);
+  }
+  return console.log(undefined);
+}
+
 const hashTable = new HashTable(50);
-hashTable.reoccur([1, 1, 2, 3, 4, 2, 1]);
+// hashTable.reoccur([1, 1, 2, 3, 4, 2, 1]);
+firstRecurringCharacter([2, 1, 1, 2, 3, 4, 2, 1]);
